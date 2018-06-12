@@ -60,7 +60,7 @@
                     topFrameLen = self.initObj.docFrame.children.length,
                     bottomFrameLen = self.initObj.endDocFrame.children.length;
                     // 滚动到底部
-                    if(top+height>scrollH-20){
+                    if(top+height>scrollH-20&&!bottomFrameLen){
                         self.loadbox();
                         return;
                     }
